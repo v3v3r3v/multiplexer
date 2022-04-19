@@ -16,7 +16,7 @@ const (
 	// Number of requests for fetch data concurrently
 	concurrentRequestsLimit = 4
 	// Request timeout
-	fetchTimeout = 100 * time.Second
+	fetchTimeout = 1 * time.Second
 )
 
 func FetchUrlList(ctx context.Context, urls []string) ([]FetchResult, error) {
