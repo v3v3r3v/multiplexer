@@ -1,0 +1,36 @@
+### Request should fail
+# Response example
+# HTTP/1.1 400 Bad Request
+# Date: Tue, 19 Apr 2022 17:35:35 GMT
+# Content-Length: 57
+# Content-Type: text/plain; charset=utf-8
+#
+# {"message":"Error: Maximum urls to process 20, given 21"}
+POST http://localhost:8990/multiplex
+Content-Type: application/json
+
+[
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000",
+  "http://stub:8991/stub?limit=1000"
+]
+
+###

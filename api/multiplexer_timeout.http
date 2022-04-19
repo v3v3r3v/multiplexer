@@ -1,0 +1,29 @@
+### Could fail - becouse some of requests could take more then 1 sec time
+# Response example:
+# HTTP/1.1 400 Bad Request
+# Date: Tue, 19 Apr 2022 17:34:55 GMT
+# Content-Length: 57
+# Content-Type: text/plain; charset=utf-8
+#
+# {"message":"Error: an error occurred during the request"}
+POST http://localhost:8990/multiplex
+Content-Type: application/json
+
+[
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500",
+  "http://stub:8991/stub?limit=1500"
+]

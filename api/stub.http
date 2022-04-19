@@ -1,0 +1,14 @@
+### Request to stub service
+# HTTP/1.1 200 OK
+# Content-Type: application/json
+# Date: Tue, 19 Apr 2022 17:45:32 GMT
+# Content-Length: 22
+#
+# {
+#   "random_number": 563
+# }
+GET http://localhost:8991/stub?limit=1000
+Accept: application/json
+
+###
+

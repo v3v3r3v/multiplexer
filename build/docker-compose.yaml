@@ -1,0 +1,18 @@
+version: "3"
+services:
+  multiplexer:
+    build:
+      context: ..
+      dockerfile: build/multiplexer/Dockerfile
+    ports:
+      - "8990:8990"
+    environment:
+      MULTIPLEXER_SERVER_PORT: 8990
+  stub:
+    build:
+      context: ..
+      dockerfile: build/stub/Dockerfile
+    ports:
+      - "8991:8991"
+    environment:
+      STUB_SERVER_PORT: 8991
