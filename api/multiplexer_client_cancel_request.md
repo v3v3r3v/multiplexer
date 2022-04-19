@@ -1,5 +1,3 @@
-Could fail - because requests could take more than 1 sec time
-
 Curl:
 ```shell
 curl --location --request POST 'http://localhost:8990/multiplex' \
